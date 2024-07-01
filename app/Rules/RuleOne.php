@@ -4,6 +4,10 @@ namespace App\Rules;
 
 class RuleOne
 {
+    /**
+     * @param array $products
+     * @return array
+     */
     public function apply(array $products): array
     {
         $payableItems = [];

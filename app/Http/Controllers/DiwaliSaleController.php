@@ -8,7 +8,6 @@ use App\Http\Requests\DiwaliSaleRequest;
 
 class DiwaliSaleController extends Controller
 {
-
     protected DiwaliSaleService $diwaliSaleService;
 
     public function __construct(DiwaliSaleService $diwaliSaleService)

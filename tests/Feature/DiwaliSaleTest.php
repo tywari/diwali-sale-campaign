@@ -9,7 +9,10 @@ class DiwaliSaleTest extends TestCase
 {
     use RefreshDatabase;
 
-    public function test_diwali_sale_rule_one()
+    /**
+     * @return void
+     */
+    public function test_diwali_sale_rule_one(): void
     {
         $products = [10, 20, 30, 40, 50, 60];
         $response = $this->post('/api/diwali-sale', ['products' => $products, 'rule' => 'rule_one']);
@@ -19,7 +22,10 @@ class DiwaliSaleTest extends TestCase
         ]);
     }
 
-    public function test_diwali_sale_rule_two()
+    /**
+     * @return void
+     */
+    public function test_diwali_sale_rule_two(): void
     {
         $products = [10, 20, 30, 40, 40, 50, 60, 60];
         $response = $this->post('/api/diwali-sale', ['products' => $products, 'rule' => 'rule_two']);
@@ -29,7 +35,10 @@ class DiwaliSaleTest extends TestCase
         ]);
     }
 
-    public function test_diwali_sale_rule_three()
+    /**
+     * @return void
+     */
+    public function test_diwali_sale_rule_three(): void
     {
         $products = [5, 5, 10, 20, 30, 40, 50, 50, 50, 60];
         $response = $this->post('/api/diwali-sale', ['products' => $products, 'rule' => 'rule_three']);
